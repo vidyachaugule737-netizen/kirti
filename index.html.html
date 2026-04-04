@@ -3,19 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
+<title>My project</title>
 
 <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        scroll-behavior: smooth;
-        background: #f5f5f5;
-    }
+    
+      body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+
+    background-image: url("download (6).jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
     /* Navbar */
     nav {
-        background: #222;
+        background: yellow;
         padding: 15px;
         position: sticky;
         top: 0;
@@ -23,7 +28,7 @@
     }
 
     nav a {
-        color: white;
+        color: red;
         margin: 10px;
         text-decoration: none;
         font-size: 16px;
@@ -41,7 +46,7 @@
 
     #home {
         background: #00adb5;
-        color: white;
+        color: pink;
     }
 
     .card {
@@ -83,98 +88,97 @@
 </style>
 </head>
 
-<body>
+<body>                                                                                                                                      
 
 <!-- Navbar -->
 <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#achievements">Achievements</a>
+    <a href="#policies">Policies</a>
+    <a href="#calculator">Premium Calculator</a>
     <a href="#contact">Contact</a>
 </nav>
-
 <!-- Home -->
 <section id="home">
-    <img src="https://lh3.googleusercontent.com/a/ACg8ocLhmzHHMkB1HbwQhKmM7izDBgPA2qcRYC29Thh4I7AfNCD2H6w=s400-c" alt="Profile Photo">
-    <h1>Your Name</h1><li>Vidya Gunvant Chaugule</>
-    <p>Web Developer | Engineer | Designer</p>
+    <img src="C:\Users\Admin\Downloads\download (5).jfif" alt="Profile Photo">
+    <h1>Life Insurance Corporation</h1>
+    
 </section>
 
 <!-- About -->
 <section id="about">
     <div class="card">
-        <h2>About Me</h2>
-        <p>I am a passionate web developer with interest in building modern, responsive and user-friendly websites.</p>
-    </div>
+        <!-- HOME -->
+<section id="home" class="section">
+    <h2>Welcome to LIC</h2>
+    <img src="C:\Users\Admin\Downloads\download (7).jfif">
+    <p>
+        LIC is the largest insurance company in India. It provides financial security 
+        and investment opportunities to millions of people.
+    </p>
 </section>
 
-<!-- Education -->
-<section id="education">
-    <div class="card">
-        <h2>Education</h2>
-        <p>first year diploma</p>
-        <p>fabtech technical  College,sangola 2025 - 2026</p>
-    </div>
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>About LIC</h2>
+    <p><b>Founded:</b> 1956</p>
+    <p>
+        LIC was formed after nationalization of insurance industry in India.
+        It offers life insurance products and investment services.
+    </p>
+
+    <h3>Symbol Meaning</h3><img src="C:\Users\Admin\Downloads\download (5).jfif">
+    <p>
+        The LIC logo shows two hands protecting a lamp which means protection, trust and security.
+    </p>
 </section>
 
-<!-- Skills -->
-<section id="skills">
-    <div class="card">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-         </ul>
-    </div>
+<!-- POLICIES -->
+<section id="policies" class="section">
+    <h2>LIC Policies</h2>
+    <ul>
+   <li>Term Insurance Plan</li><img src="C:\Users\Admin\Downloads\download (1).jfif"> 
+        <li>Whole Life Policy</li><img src="C:\Users\Admin\Downloads\download (2).jfif"> 
+        <li>Endowment Plan</li><img src="C:\Users\Admin\Downloads\download (3).jfif"> 
+        <li>Money Back Plan</li><img src="C:\Users\Admin\Downloads\download (4).jfif"> 
+        <li>Pension Plan</li><img src="C:\Users\Admin\Downloads\images (1).jfif"> 
+    </ul>
 </section>
 
-<!-- Projects -->
-<section id="projects">
-    <div class="card">
-        <h2>Projects</h2>
-        <ul>
-            <li>Portfolio Website</li>
-            
-        </ul>
-    </div>
+<!-- CALCULATOR -->
+<section id="calculator" class="section">
+    <h2>Premium Calculator</h2>
+
+    Age: <input type="number" id="age"><br><br>
+    Amount: <input type="number" id="amount"><br><br>
+
+    <button onclick="calculate()">Calculate Premium</button>
+
+    <h3 id="result"></h3>
 </section>
 
-<!-- Experience -->
-<section id="experience">
-    
-    </div>
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form>
+        Name:<br> Vidya Gunvant Chaugule
+       
+
+        Email:<br> vidyachaugule737@gmail.com
+       
+
+        mobail no. :<br>9763142952
+        
+
+        <input type="submit" value="Send">
+    </form>
 </section>
 
-<!-- Achievements -->
-<section id="achievements">
-    <div class="card">
-        <h2>Achievements</h2>
-        <ul>
-            
-            <li>Certified dark logic c</li>
-             <li>MS-CIT </li>
-        </ul>
-    </div>
-</section>
-
-<!-- Contact -->
-<section id="contact">
-    <div class="card">
-        <h2>Contact</h2>
-        <p>Email: vidyachaugule737@gmail.com</p>
-        <p>Phone: 9763142952</p>
-     
-    </div>
-</section>
-
-<!-- Footer -->
 <footer>
-    <p>© 2026 Your Name  | All Rights Reserved</p>
+    <p>© 2026 LIC Micro Project | Made by Student</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
